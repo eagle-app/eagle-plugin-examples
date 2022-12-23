@@ -1,0 +1,15 @@
+{
+    "id": "LC04DTN2DYBJK",
+    "version": "1.0.0",
+    "name": "Preview",
+    "logo": "/logo.png",
+    "keywords": [
+        "icns"
+    ],
+    "preview": {
+        "icns": {
+            "thumbnail": "preview_extensions/thumbnail/icns.js",
+            "viewer": "preview_extensions/viewer/icns.html"
+        }
+    }
+}

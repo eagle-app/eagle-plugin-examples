@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>ICNS Viewer</title>
+	<style>
+		html, body {
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+		}
+		#viewer {
+			pointer-events: none;
+			object-fit: contain;
+			object-position: center;
+			width: 100%;
+			height: 100%;
+			max-width: 100vw;
+    		max-height: 100vh;
+		}
+	</style>
+</head>
+<body>
+	<img id="viewer"/>
+	<script>
+		const urlParams = new URLSearchParams(window.location.search);
+		const filePath = urlParams.get('path');
+		const width = urlParams.get('width');
+		const height = urlParams.get('height');
+		const theme = urlParams.get('theme');
+		const lang = urlParams.get('lang');
+
+		const viewer = document.querySelector('#viewer');
+
+		// 1. Load the thumbnail image first
+		// 👍 Avoid loading for too long, and UI has no content
+		viewer.src = filePath.replace(".icns", "_thumbnail.png");
+
+		// 2. Load the file and replace thumbnail
+		(async function() {
+			const icns = require('./../js/icns-util.js');
+			let buffer = await icns.icns2buffer(filePath);
+			let base64 = `data:image/png;base64,${buffer.toString('base64')}`;
+			viewer.src = base64;
+		})();
+	</script>
+</body>
+</html>
