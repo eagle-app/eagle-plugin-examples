@@ -1,0 +1,12 @@
+{
+    "id": "LC04D1P8BORSE",
+    "version": "1.0.0",
+    "name": "Window",
+    "logo": "/logo.png",
+    "keywords": [],
+    "main": {
+        "url": "index.html",
+        "width": 640,
+        "height": 480
+    }
+}
