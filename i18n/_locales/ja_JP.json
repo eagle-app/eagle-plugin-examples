@@ -1,0 +1,11 @@
+{
+	"manifest": {
+		"app": {
+			"name": "i18n の例"
+		}
+	},
+	"contextMenu": {
+		"copy": "コピー",
+		"paste": "ペース"
+	}
+}

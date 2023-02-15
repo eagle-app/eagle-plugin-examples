@@ -1,0 +1,14 @@
+{
+    "id": "LE564883T24ZR",
+    "version": "1.0.0",
+    "name": "{{manifest.app.name}}",
+    "logo": "/logo.png",
+    "keywords": [],
+	"fallbackLanguage": "zh_CN",
+  	"languages": ["en", "zh_TW", "zh_CN", "ja_JP"],
+    "main": {
+        "url": "index.html",
+        "width": 640,
+        "height": 480
+    }
+}

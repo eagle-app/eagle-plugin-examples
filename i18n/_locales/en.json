@@ -1,0 +1,11 @@
+{
+	"manifest": {
+		"app": {
+			"name": "i18n example"
+		}
+	},
+	"contextMenu": {
+		"copy": "Copy",
+		"paste": "Paste"
+	}
+}

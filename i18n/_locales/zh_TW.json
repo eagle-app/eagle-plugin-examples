@@ -1,0 +1,11 @@
+{
+	"manifest": {
+		"app": {
+			"name": "多國語言範例"
+		}
+	},
+	"contextMenu": {
+		"copy": "複製",
+		"paste": "貼上"
+	}
+}
