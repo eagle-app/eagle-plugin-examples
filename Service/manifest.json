@@ -1,11 +1,15 @@
 {
-    "id": "LC04DK8VQ8FJH",
+	"id": "LARSJLVDQEB0B",
     "version": "1.0.0",
-    "name": "Service",
+	"platform": "all",
+	"arch": "all",
+    "name": "Service Plugin",
     "logo": "/logo.png",
     "keywords": [],
-    "main": {
-        "serviceMode": true,
+	"devTools": false,
+    "main":
+    {
+		"serviceMode": true,
         "url": "index.html",
         "width": 640,
         "height": 480

@@ -1,15 +1,23 @@
 {
-    "id": "LC04DTN2DYBJK",
+	"id": "LARSKLB8OTOC2",
     "version": "1.0.0",
-    "name": "Preview",
+	"platform": "all",
+	"arch": "all",
+    "name": "Preview Plugin",
     "logo": "/logo.png",
-    "keywords": [
-        "icns"
-    ],
-    "preview": {
-        "icns": {
-            "thumbnail": "thumbnail/icns.js",
-            "viewer": "viewer/icns.html"
+    "keywords": ["icns"],
+	"devTools": false,
+    "preview":
+    {
+        "icns":
+        {
+            "thumbnail": {
+				"path": "thumbnail/icns.js",
+				"size": 400
+			},
+            "viewer": {
+				"path": "viewer/icns.html"
+			}
         }
     }
 }

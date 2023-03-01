@@ -1,10 +1,14 @@
 {
-    "id": "LC04D1P8BORSE",
+	"id": "LARSK1QMR0DEP",
     "version": "1.0.0",
-    "name": "Window",
+	"platform": "all",
+	"arch": "all",
+    "name": "Window Plugin",
     "logo": "/logo.png",
     "keywords": [],
-    "main": {
+	"devTools": false,
+    "main":
+    {
         "url": "index.html",
         "width": 640,
         "height": 480
