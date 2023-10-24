@@ -1,0 +1,16 @@
+{
+    "id": "6085a98e-ff49-40d2-8c0d-8cd55bfcfc1b",
+    "version": "1.0.0",
+    "platform": "all",
+    "arch": "all",
+    "name": "Multiple Windows",
+    "logo": "/logo.png",
+    "keywords": [],
+    "devTools": false,
+    "main": {
+        "multiple": true,
+        "url": "index.html",
+        "width": 640,
+        "height": 480
+    }
+}
