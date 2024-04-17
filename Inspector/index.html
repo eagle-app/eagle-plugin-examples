@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Inspector Plugin Example</title>
+    <style>
+        html {
+            font-size: 11px;
+            font-family: sans-serif;
+            border-radius: 6px;
+            overflow: hidden;
+        }
+
+        body {
+            padding: 0;
+            margin: 0;
+            color: transparent;
+        }
+
+        /* colors for different themes */
+
+        body[theme="LIGHT"],
+        body[theme="LIGHTGRAY"] {
+            color: black;
+        }
+
+        body[theme="GRAY"],
+        body[theme="BLUE"],
+        body[theme="PURPLE"],
+        body[theme="DARK"] {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    Inspector Plugin Example
+    <script>
+        // Listen to plugin creation
+        eagle.onPluginCreate(async (plugin) => {
+
+            // Get the current theme
+            const theme = await eagle.app.theme;
+            document.body.setAttribute('theme', theme);
+
+            // Get the selected item
+            const item = await eagle.item.getSelected();
+
+            console.log(item);
+            console.log(theme);
+        });
+
+        // Listen to theme changes
+        eagle.onThemeChanged((theme) => {
+            document.body.setAttribute('theme', theme);
+        });
+    </script>
+</body>
+
+</html>

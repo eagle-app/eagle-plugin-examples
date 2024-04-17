@@ -1,0 +1,19 @@
+{
+    "id": "cc41e899-5fc3-445c-a113-2d9573d6edcc",
+    "version": "1.0.0",
+    "platform": "all",
+    "arch": "all",
+    "name": "Inspector Plugin",
+    "logo": "/logo.png",
+    "keywords": [],
+    "devTools": true,
+    "preview": {
+        "jpg,png": {
+            "inspector": {
+                "path": "index.html",
+                "height": 100,
+                "multiSelect": false
+            }
+        }
+    }
+}
