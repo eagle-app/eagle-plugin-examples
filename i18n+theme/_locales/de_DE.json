@@ -1,0 +1,11 @@
+{
+	"manifest": {
+		"app": {
+			"name": "I18n + Theme Beispiel"
+		}
+	},
+	"app": {
+		"title": "I18n + Theme Beispiel",
+		"content": "Dies ist ein Beispiel für I18n + Theme. Wenn Sie mehr Codebeispiele sehen möchten, <a href='https://developer.eagle.cool' target='_blank'>klicken Sie hier</a>."
+	}
+}

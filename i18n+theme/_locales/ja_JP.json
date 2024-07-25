@@ -1,0 +1,11 @@
+{
+	"manifest": {
+		"app": {
+			"name": "i18n + theme の例"
+		}
+	},
+	"app": {
+		"title": "i18n + theme の例",
+		"content": "これはi18n + theme の例です。さらに多くのコード例を見たい場合は、<a href='https://developer.eagle.cool/plugin-api/get-started/creating-your-first-plugin' target='_blank'>ここをクリック</a>して進んでください。"
+	}
+}

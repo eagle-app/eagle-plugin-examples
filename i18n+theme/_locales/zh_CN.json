@@ -1,0 +1,11 @@
+{
+	"manifest": {
+		"app": {
+			"name": "多语言及多主题示例"
+		}
+	},
+	"app": {
+		"title": "多语言及多主题示例",
+		"content": "这是一个多语言及多主题示例，如果你想要查看更多程序代码示例，<a href='https://developer.eagle.cool/' target='_blank'>点击这里</a>前往。"
+	}
+}

@@ -1,0 +1,11 @@
+{
+	"manifest": {
+		"app": {
+			"name": "多國語言及多主題範例"
+		}
+	},
+	"app": {
+		"title": "多國語言及多主題範例",
+		"content": "這是一個多國語言及多主題範例，如果你想要查看更多程式碼範例，<a href='https://developer.eagle.cool/plugin-api/get-started/creating-your-first-plugin' target='_blank'>點擊這裡</a>前往。"
+	}
+}

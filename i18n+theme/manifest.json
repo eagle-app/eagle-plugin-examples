@@ -1,0 +1,20 @@
+{
+    "id": "replace-with-your-own-uuid",
+    "version": "1.0.0",
+    "platform": "all",
+    "arch": "all",
+    "name": "{{manifest.app.name}}",
+    "logo": "/logo.png",
+    "keywords": [],
+    "devTools": false,
+	"fallbackLanguage": "en",
+	"languages": ["en", "zh_TW", "zh_CN", "ja_JP", "es_ES", "ru_RU", "de_DE", "ko_KR"],
+    "main": {
+		"url": "src/app.html",
+		"width": 640,
+		"minWidth": 640,
+		"height": 480,
+		"minHeight": 480,
+		"frame": false
+	}
+}

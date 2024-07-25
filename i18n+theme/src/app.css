@@ -1,0 +1,123 @@
+* {
+	-webkit-font-smoothing: antialiased;
+	box-sizing: border-box;
+	margin: 0;
+	font-family: -apple-system, "SF Pro Text", Helvetica Neue, Helvetica, Roboto, Arial, PingFang SC, PingFang TC, Hiragino Sans GB, Microsoft Yahei, Microsoft Jhenghei, sans-serif;
+	font-weight: 400;
+}
+
+html[theme="light"] {
+	background-color: #f4f4f4;
+}
+
+html[theme="dark"] {
+	background-color: #18191c;
+}
+
+html[theme="lightgray"] {
+	background-color: #e3e4e6;
+}
+
+html[theme="gray"] {
+	background-color: #37383c;
+}
+
+html[theme="blue"] {
+	background-color: #0d1630;
+}
+
+html[theme="purple"] {
+	background-color: #1c1424;
+}
+
+html[theme="light"],
+html[theme="lightgray"] {
+	--border-secondary: rgba(0, 0, 0, 0.1);
+	--color-bg-hover: rgba(0, 0, 0, 0.05);
+	--close-btn-image: url(../images/light/ic-close.svg);
+	--color-text-primary: rgb(24, 25, 28);
+	--color-text-secondary: rgb(24, 25, 28, 0.7);
+	--color-text-tertiary: rgb(24, 25, 28, 0.5);
+}
+
+html[theme="dark"],
+html[theme="gray"],
+html[theme="blue"],
+html[theme="purple"] {
+	--border-secondary: rgba(255, 255, 255, 0.1);
+	--color-bg-hover: rgba(255, 255, 255, 0.05);
+	--close-btn-image: url(../images/dark/ic-close.svg);
+	--color-text-primary: rgb(248, 249, 251);
+	--color-text-secondary: rgb(248, 249, 251, 0.7);
+	--color-text-tertiary: rgb(248, 249, 251, 0.5);
+}
+
+header {
+	user-select: none;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 8px;
+	height: 48px;
+	padding: 0 12px;
+	border-bottom: 1px solid var(--border-secondary);
+}
+
+header h1 {
+	display: inline-block;
+	font-size: 14px;
+	font-weight: 500;
+}
+
+header .draggable {
+	-webkit-app-region: drag;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	flex: 1;
+	height: 100%;
+}
+
+header button.btn-close {
+	width: 24px;
+	height: 24px;
+	background-color: transparent;
+	background-image: var(--close-btn-image);
+	cursor: pointer;
+	border: none;
+	border-radius: 4px;
+}
+
+header button.btn-close:hover {
+	background-color: var(--color-bg-hover);
+}
+
+header,
+main {
+	color: var(--color-text-primary);
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	height: calc(100vh - 48px);
+	padding: 24px;
+	font-size: 14px;
+}
+
+main div#heading {
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 12px;
+	font-size: 36px;
+	font-weight: bold;
+}
+
+main div#content {
+	font-size: 14px;
+}
+
+a {
+	color: var(--color-text-secondary);
+}
