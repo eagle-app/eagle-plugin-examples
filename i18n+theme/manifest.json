@@ -15,6 +15,7 @@
 		"minWidth": 640,
 		"height": 480,
 		"minHeight": 480,
-		"frame": false
+		"frame": false,
+	    	"vibrancy": true
 	}
 }
